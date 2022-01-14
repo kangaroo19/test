@@ -9,28 +9,50 @@
     <!-- ㄴ>초기화 -->
     <link rel="stylesheet" href="test.css">
     <style>
-        *,
-        *::before,
-        *::after{
-            box-sizing: border-box;
+        div{
+            margin:auto;
+            margin-top:20px;
+            border:3px solid black;
+            border-radius: 10px;
+            background-color: red;
+            width:100px;
+            height:100px;
         }
-        
-        #first{
-            border:1px solid black;
+        #box1{
+            animation-duration: 1s;
+            animation-name: rainbow;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-timing-function: linear;
+
         }
-        #second{
-            border:1px solid black;
-            display: none;
-        }
-        #third{
-            border:1px solid black;
+        @keyframes rainbow{
+            0%{
+                background-color: red;
+            }
+            16%{
+                background-color: orange;
+            }
+            32%{
+                background-color: yellow;
+            }
+            48%{
+                background-color: green;
+            }
+            62%{
+                background-color: blue;
+            }
+            78%{
+                background-color: navy;
+            }
+            100%{
+                background-color: purple;
+            }
 
         }
     </style>
 </head>
 <body>
-   <div id="first">first</div>
-   <div id="second">second</div>
-   <div id="third">third</div>
+  <div id="box1"></div>
 </body>
 </html>
