@@ -1,0 +1,11 @@
+#box{
+    width:500px;
+    height:500px;
+    margin:0 auto;
+    border:black solid 1px;
+}
+#box_first{
+    width:50%;
+    height:100%;
+    border:black solid 1px;
+}

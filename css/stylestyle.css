@@ -51,6 +51,7 @@ header{
 .head-container .head-brand{
     font-weight: bold;
     font-size: 1.2rem;
+    margin-left:30px;
 }
 .head-container .head-brand a:hover{
     color:#2186c4;
@@ -59,6 +60,7 @@ header{
 .head-container .head-blog{
     font-weight: bold;
     font-size: 1.2rem;
+    margin-right:30px;
 }
 .head-container .head-blog a:hover{
     color:#2186c4;
@@ -88,6 +90,7 @@ section{
     margin-top: 60px;
 }
 .title-container{
+    margin:0 30px;
     padding-top:60px;
     padding-bottom: 100px;
 }
@@ -101,10 +104,54 @@ section{
     color:white;
     font-size: 1.4rem;
 }
-
+.skill-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill{
+    width:25%;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    border-radius: 9px;
+    padding:0.5rem 1rem;
+    margin:0 1rem;
+    box-shadow:10px 10px 10px -5px rgba(25,42,70,0.2);
+}
+.skill-icon{
+    font-size:2.5rem;
+    margin:0 7px;
+}
+.skill-title{
+    margin:0 1rem;
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+}
+.skill-name{
+    font-weight: bold;
+    color:#545e6f;
+    margin-bottom: 0.2rem;
+}
+.skill-usage{
+    font-size:12px;
+    color:#545e6f;
+}
+.python-style{
+    color:#2186c4;
+}
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
     .inner{
         max-width:1200px;
+    }
+}
+/* 1024px 이하 */
+@media only screen and (max-width:950px){
+    .skill-container{
+        display:none;
     }
 }
