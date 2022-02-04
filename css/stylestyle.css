@@ -143,6 +143,15 @@ section{
 .python-style{
     color:#2186c4;
 }
+.html-style{
+    color:#db4328
+}
+.css-style{
+    color:#283ceb
+}
+.javascript-style{
+    color:rgb(228, 224, 2)
+}
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
     .inner{
