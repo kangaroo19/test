@@ -152,6 +152,36 @@ section{
 .javascript-style{
     color:rgb(228, 224, 2)
 }
+.roadmap-container{
+    width:100%;
+    margin-top:2rem;
+}
+.roadmap-title-container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roadmap-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#545e6f;
+    margin-left:30px;
+}
+.slide-prev{
+    font-size: 2rem;
+    cursor:pointer;
+    color:rgb(47,48,89);
+}
+.slide-next{
+    font-size:2rem;
+    cursor:pointer;
+    color:#cfd8dc;
+}
+.arrow-container{
+    display:flex;
+    margin-right:30px;
+}
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
     .inner{
