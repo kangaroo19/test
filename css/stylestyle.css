@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0 auto;
     color:#3f464d;
@@ -36,7 +39,7 @@ a:hover{
 header{
     width:100%;
     height:60px;
-    background-color: white;
+    background-color: #fff;
     position: fixed;
     top:0;
     left:0;
@@ -122,6 +125,10 @@ section{
     padding:0.5rem 1rem;
     margin:0 1rem;
     box-shadow:10px 10px 10px -5px rgba(25,42,70,0.2);
+    transition: 0.4s;
+}
+.skill:hover{
+    transform: translate(0,-5px);
 }
 .skill-icon{
     font-size:2.5rem;
@@ -192,10 +199,17 @@ section{
     overflow: hidden;
 }
 .class-card{
-    width:220px;
+    max-width:240px;
     box-shadow: 10px 10px 10px -5px rgba(25,42,70,0.2);
     border-radius:8px;
     margin:0 10px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+.class-card:hover{
+    box-shadow: 10px 10px 10px 0px rgba(25,42,70,0.2);
+    transform: translate(0,-5px);
+
 }
 .class-image{
     /* 부모클래스 class-card의 width 240px 상속받아 width:100%=240px */
@@ -239,6 +253,29 @@ section{
 .class-detail{
     font-size: 0.9rem;
     color:#545e6f;
+    line-height: 1.5rem;
+}
+footer{
+    border-top:1px solid #e4e4e4;
+    background-color:#f8f9fa ;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+.footer-message{
+    font-weight: bold;
+    font-size:0.9rem;
+    color:#545e6f;
+    margin-bottom:0.2rem;
+}
+.footer-contact{
+    font-size:0.9rem;
+    color:#545e6f;
+    margin-bottom:1rem;
+
+}
+.footer-copyright{
+    font-size:0.9rem;
+    color:#545e6f;
 }
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
@@ -246,9 +283,12 @@ section{
         max-width:1200px;
     }
 }
-/* 1024px 이하 */
+/* 950px 이하 */
 @media only screen and (max-width:950px){
     .skill-container{
         display:none;
+    }
+    .class-list{
+        margin-right:30px;
     }
 }
