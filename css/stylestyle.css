@@ -30,6 +30,7 @@ a:hover{
     height:100%;
     margin:0 auto;
     /* padding:0 10px; */
+    overflow: hidden;
 }
 
 header{
@@ -110,7 +111,7 @@ section{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    
+    margin:1rem 0;
 }
 .skill{
     width:25%;
@@ -182,6 +183,62 @@ section{
 .arrow-container{
     display:flex;
     margin-right:30px;
+}
+.class-list{
+    display: flex;
+    list-style:none;
+    padding:10px 0;
+    margin:1rem 0 0.2rem 1.2rem;
+    overflow: hidden;
+}
+.class-card{
+    width:220px;
+    box-shadow: 10px 10px 10px -5px rgba(25,42,70,0.2);
+    border-radius:8px;
+    margin:0 10px;
+}
+.class-image{
+    /* 부모클래스 class-card의 width 240px 상속받아 width:100%=240px */
+    width:100%;
+    border-radius:8px 8px 0 0;
+}
+.class-container{
+    width:100%;
+    padding:0.5rem 0 1rem 0;
+}
+.class-skill{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.class-type{
+    color:#949393;
+    font-size: 0.9rem;
+    margin-left:10px;
+}
+.class-format{
+    color:white;
+    font-size:0.9rem;
+    background-color:#0d47a1 ;
+    padding:0.2rem;
+    margin-right:10px;
+    
+}
+.class-desc{
+    width:100%;
+    margin-top:0.2rem;
+}
+.class-title{
+    font-weight: bold;
+    color:#545e6f;
+    width:100%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.class-detail{
+    font-size: 0.9rem;
+    color:#545e6f;
 }
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
