@@ -1,11 +1,25 @@
-#box{
-    width:500px;
-    height:500px;
-    margin:0 auto;
-    border:black solid 1px;
+*{
+    box-sizing: border-box;
 }
-#box_first{
-    width:50%;
-    height:100%;
-    border:black solid 1px;
+#container{
+    width:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center
+}
+
+.box{
+    width:100%;
+    margin:5px;
+    border:1px solid black;
+}
+
+#box1{
+    flex-shrink: 1;
+}
+#box2{
+    flex-shrink: 2;
+}
+#box3{
+    flex-shrink: 2;
 }
