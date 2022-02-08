@@ -260,22 +260,25 @@ footer{
     background-color:#f8f9fa ;
     padding:1rem 0;
     margin:1rem 0;
+    
 }
 .footer-message{
     font-weight: bold;
     font-size:0.9rem;
     color:#545e6f;
     margin-bottom:0.2rem;
+    margin-left:30px;
 }
 .footer-contact{
     font-size:0.9rem;
     color:#545e6f;
     margin-bottom:1rem;
-
+    margin-left:30px;
 }
 .footer-copyright{
     font-size:0.9rem;
     color:#545e6f;
+    margin-left:30px;
 }
 /* width가 1200px보다 크면 적용 */
 @media only screen and (min-width:1200px){
