@@ -5,5 +5,11 @@ dfd
 asdf
 */
 
-let a=1==2;
-console.log(a);
+let func=(item1,item2)=> item1*item2;
+
+
+console.log(func(2,3));
+
+
+
+
