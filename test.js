@@ -2,7 +2,7 @@
 
 /* -->두줄 주석
 dfd
-asdf2222
+asdf
 */
 
 let func=(item1,item2)=> item1*item2;
