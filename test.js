@@ -1,17 +1,13 @@
-//naming rule camelCase
+class Animal{
+    constructor(name){
+        this.name=name;
+    }
+    get_message(){
+        return "hello";
+    }
+}
 
-/* -->두줄 주석
-dfd
-asdf
-*/
+Animal.prototype.age=10;
 
-let func=()=>"hello World";
-
-console.log(func());
-
-let func1=(item1,item2)=>item1+item2;
-console.log(func1(1,2));
-
-
-
-
+const dave=new Animal("jaehyun");
+console.log(dave.hasOwnProperty("age"));

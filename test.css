@@ -1,25 +1,17 @@
-*{
-    box-sizing: border-box;
-}
-#container{
-    width:100%;
-    border:1px solid black;
-    display:flex;
-    justify-content:center
-}
-
-.box{
-    width:100%;
-    margin:5px;
-    border:1px solid black;
-}
-
 #box1{
-    flex-shrink: 1
+    border:1px solid black;
+    margin:0 auto;
+    width:100px;
+    height:100px;
 }
 #box2{
-    flex-shrink: 2;
+    margin:0 auto;
+    width:100px;
+    height:100px;
 }
-#box3{
-    flex-shrink: 2;
+#box1:active{
+    border:1px dotted black;
+}
+#box2:active{
+    border:1px solid black;
 }
