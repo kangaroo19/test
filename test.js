@@ -5,10 +5,12 @@ dfd
 asdf
 */
 
-let func=(item1,item2)=> item1*item2;
+let func=()=>"hello World";
 
+console.log(func());
 
-console.log(func(2,3));
+let func1=(item1,item2)=>item1+item2;
+console.log(func1(1,2));
 
 
 
