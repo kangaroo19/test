@@ -1,13 +1,7 @@
-class Animal{
-    constructor(name){
-        this.name=name;
-    }
-    get_message(){
-        return "hello";
-    }
+const box1=document.querySelector("#box1");
+
+function dbclickfunc(){
+    box1.classList.add("mkblue");
+    console.log("db");
 }
-
-Animal.prototype.age=10;
-
-const dave=new Animal("jaehyun");
-console.log(dave.hasOwnProperty("age"));
+box1.addEventListener("dblclick",dbclickfunc);
