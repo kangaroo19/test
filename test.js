@@ -1,7 +1,9 @@
-const box1=document.querySelector("#box1");
+let f2=age=>age*2;
 
-function dbclickfunc(){
-    box1.classList.add("mkblue");
-    console.log("db");
-}
-box1.addEventListener("dblclick",dbclickfunc);
+console.log(f2(2));
+
+let data=[1,2,3,4,5,6,7,8];
+
+let even=data.filter(item=>item%2===0);
+
+console.log(even);
