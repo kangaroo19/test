@@ -1,5 +1,17 @@
-{
-    var a=1;
+console.log('hi');
+function desc(callback){
+    setTimeout(()=>{
+        console.log('jaehyun');
+        callback();
+    },3000);
+    
 }
 
-console.log(a);
+
+function desc2(){
+   console.log("hkhkhkhkhkh"); 
+}
+
+desc(desc2);
+
+console.log("adfds");
