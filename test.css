@@ -1,20 +1,11 @@
-section{
-    display:block;
+#box{
     margin:0 auto;
-    width:100%;
-    height:100%;
-    background-color: yellowgreen;
-}
-body{
+    width:25%;
+    height:25%;
     background-color: black;
-    margin:0;
 }
 
-@media only screen and (min-width:958px){
-    section{
-        max-width:958px;
-    }
-    body{
-        
-    }
-} 
+body{
+    width:100%;
+    height:max-content;
+}
