@@ -187,6 +187,14 @@ section{
     cursor:pointer;
     color:#cfd8dc;
 }
+.slide-prev-hover:hover{
+    transition: transform 0.5s;
+    transform:translateX(-2px);
+}
+.slide-next-hover:hover{
+    transition: transform 0.5s;
+    transform:translateX(2px);
+}
 .arrow-container{
     display:flex;
     margin-right:30px;
@@ -196,7 +204,7 @@ section{
     list-style:none;
     padding:10px 0;
     margin:1rem 0 0.2rem 1.2rem;
-    overflow: hidden;
+    overflow: none;
 }
 .class-card{
     max-width:240px;
@@ -242,9 +250,12 @@ section{
     width:100%;
     margin-top:0.2rem;
 }
+.class-desc:hover{
+    color:#2186c4;
+}
 .class-title{
     font-weight: bold;
-    color:#545e6f;
+    color:inherit;
     width:100%;
     white-space:nowrap;
     overflow: hidden;
@@ -252,7 +263,7 @@ section{
 }
 .class-detail{
     font-size: 0.9rem;
-    color:#545e6f;
+    color:inherit;
     line-height: 1.5rem;
 }
 footer{
@@ -332,4 +343,8 @@ footer{
     .class-list{
         margin-right:30px;
     }
+}
+
+ul >li> img:active{
+    cursor:grabbing;
 }

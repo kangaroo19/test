@@ -21,10 +21,70 @@ function moveBackToTop(){
 
 window.addEventListener('scroll',checkScroll);
 backToTop.addEventListener('click',moveBackToTop);
+/////////////////////////////////////////////////////////////////////
+function transformNext(event){
+    const slideNext=event.target;
+    const slidePrev=slideNext.previousElementSibling;
+    const classList=slideNext.parentElement.parentElement.nextElementSibling;
+    let activeLi=classList.getAttribute('data-position');
+    const liList=classList.getElementsByTagName('li');
+    //하나의 카드라도 왼쪽으로 이동했다면, 오른쪽으로 갈 수 있음
+    if(Number(activeLi)<0){
+        activeLi=Number(activeLi)+260;
+        //왼쪾에 있던 카드가 오른쪽으로 갔다면 다시 왼쪽으로 갈 수 있으므로 prev버튼 활성화
+        slidePrev.style.color='#2f3059';
+        slidePrev.classList.add('slide-prev-hover');
+        slidePrev.addEventListener('click',transformPrev);
 
+        if(Number(activeLi)===0){
+            slideNext.style.color='#cfd8dc'; //회색(비활성)
+            slideNext.classList.remove('slide-next-hover');
+            slideNext.removeEventListener('click',transformNext);
+        }
+    }
+    classList.style.transition='transform 1s';
+    classList.style.transform='translateX('+String(activeLi)+'px)';
+    classList.setAttribute('data-position',activeLi);
+}
+/////////////////////////////////////////////////////////////////////
+function transformPrev(event){
+    const slidePrev=event.target; //해당 이벤트가 발생된 요소 가져올수있음
+    const slideNext=slidePrev.nextElementSibling;
+    //console.log(sildePrev);
+    //console.log(sildeNext);
 
-function transformPrev(){
+    const classList=slidePrev.parentElement.parentElement.nextElementSibling;
+    let activeLi=classList.getAttribute('data-position');
+    const liList=classList.getElementsByTagName('li');
+    //console.log(liList.length*260*Number(activeLi))
+    /*
+    classList.clientWidth는 ul태그의 실질적인 너비
+    activeLi 는 data-position에 있는 현재 위치
+    즉, liList.length*260*Number(activeLi)는 현재 위치부터 오른쪽으로 나열되야 하는 
+    나머지 카드들의 너비
+    */
+    if(classList.clientWidth<(liList.length * 260 + Number(activeLi))){ //넘칠때
+        //위치를 왼쪽으로 260 이동(-260px);
+        activeLi=Number(activeLi)-260;
+       // console.log(activeLi);
+        /*위치를 왼쪽으로 260 이동(-260px)
+        해당 위치는 변경된 activeLi값이 적용된 liList.length*260+Number(activeLi) 값임
+        이 값보다 classList.clientWidth (ul태그의 너비)가 크다는 것은
+        넘치는 li가 없다는 뜻으로 next버튼 활성화되면 안됨
+        */
 
+        if(classList.clientWidth>(liList.length * 260 + Number(activeLi))){
+            slidePrev.style.color='#cfd8dc'; //회색(비활성)
+            slidePrev.classList.remove('slide-prev-hover');
+            slidePrev.removeEventListener('click',transformPrev);
+        }
+        slideNext.style.color='#2f3059'; //파란색(활성)
+        slideNext.classList.add('slide-next-hover');
+        slideNext.addEventListener('click',transformNext);
+    }
+    classList.style.transition='transform 1s';
+    classList.style.transform='translateX('+String(activeLi)+'px)';
+    classList.setAttribute('data-position',activeLi);
 }
 
 const slidePrevList=document.getElementsByClassName("slide-prev");
@@ -32,8 +92,8 @@ const slidePrevList=document.getElementsByClassName("slide-prev");
 for(let i=0; i<slidePrevList.length; i++){
     let classList=slidePrevList[i].parentElement.parentElement.nextElementSibling;
     let liList=classList.getElementsByTagName('li');
-    console.log(classList.clientWidth);
-    console.log(liList.length*260);
+    console.log('classList.clientWidth='+classList.clientWidth);
+    console.log('liList의 길이 * 260='+liList.length*260);
     if(classList.clientWidth<liList.length * 260){  //li요소(class-card)가 넘칠때
         slidePrevList[i].classList.add("slide-prev-hover");
         slidePrevList[i].addEventListener('click',transformPrev);
