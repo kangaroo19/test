@@ -109,4 +109,19 @@ for(let i=0; i<slidePrevList.length; i++){
         //shildPrevList[i]를 먼저 지우면 childPrevList가 없기 떄문에 slidePrevList[i].nextElemnetSibling실행되지 않음
     }
 }
+function processTouchStart(event){
+    
+}
+function processTouchEnd(event){
 
+}
+
+window.addEventListener('dragend',processTouchEnd);
+window.addEventListener('mouseup',processTouchEnd);
+
+const classImgLists=document.querySelectorAll('ul li img');
+console.log(classImgLists);
+
+for(let i=0;i<classImgLists.length;i++){
+    classImgLists[i].addEventListener('mousedown',processTouchStart);
+}
