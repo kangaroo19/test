@@ -29,9 +29,21 @@
   
 }
 
+#move{
+  width:100px;
+  height:100px;
+  background-color: black;
+  border-radius: 50px;
+}
 
-
-
+#controller{
+  margin-top:50px;
+  width:50px;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  border:3px solid black;
+}
 
 /* 
   ##Device = Desktops
