@@ -7,3 +7,5 @@ box3.addEventListener("dblclick",()=>{
     console.log("dblclicked");
 });
 
+const ball=document.getElementById('ball');
+
