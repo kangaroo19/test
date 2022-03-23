@@ -1,0 +1,14 @@
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.item{
+    width:100px;
+    height:100px;
+    font-size: 1.6rem;
+    line-height: 100px;
+    text-align: center;
+    color:#fff;
+    background-color: tomato;
+}
