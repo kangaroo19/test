@@ -86,7 +86,9 @@ a{
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-
+.icon{
+  font-family: FontAwesome;
+}
 @media (min-width: 1281px) {
     
     
