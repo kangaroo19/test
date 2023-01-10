@@ -125,3 +125,10 @@ console.log(classImgLists);
 for(let i=0;i<classImgLists.length;i++){
     classImgLists[i].addEventListener('mousedown',processTouchStart);
 }
+console.log($("#detail-top")[0].innerText)
+$("#ffff").on("click",()=>{
+    $('#detail').removeClass('hidden')
+})
+$(".detail-close").on("click",()=>{
+    $('#detail').addClass('hidden')
+});

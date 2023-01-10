@@ -78,9 +78,9 @@ section{
 }
 .main{
     height:360px;
-    background-image: url("../img/su.jpg");
+    background-image: url("../img/main.jpg");
     background-size: cover;
-    background-position:center 20%;
+    background-position:center 1%;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -158,8 +158,8 @@ section{
 .css-style{
     color:#283ceb;
 }
-.javascript-style{
-    color:rgb(228, 224, 2);
+.discharge{
+    color:rgb(8, 97, 30);
 }
 .roadmap-container{
     width:100%;
@@ -221,7 +221,8 @@ section{
 }
 .class-image{
     /* 부모클래스 class-card의 width 240px 상속받아 width:100%=240px */
-    width:100%;
+    width:222px;
+    height:155px;
     border-radius:8px 8px 0 0;
 }
 .class-container{
@@ -347,4 +348,53 @@ footer{
 
 ul >li> img:active{
     cursor:grabbing;
+}
+.ssnd{
+    display: block;
+    width:200px;
+    margin:0 auto;
+}
+.art{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#detail{
+    z-index: 9999;
+    width:1000px;
+    height:500px;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+    position: fixed;
+    left:250px;
+    top:100px;
+}
+.hidden{
+    display: none;
+}
+.detail-container{
+    width:95%;
+    height: 95%;
+    
+}
+
+.detail-section{
+    width:95%;
+    height:85%;
+    margin-left:50px;
+    margin-top:10px;
+}
+#detail-top{
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px 20px 0px 0px;
+    color:white;
+    width:1000px;
+    height:40px;
+    background-color: rgb(123, 121, 121);
+}
+.detail-close{
+    width:70px;
+    height:20px;
+    float: right;
 }

@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/stylestyle.css">
-    <script src="https://kit.fontawesome.com/297ce5e59d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8fe9d6a948.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- CSS 작명 규칙(BEM):block element modifier -->
     <header>
         <div class="inner">
             <div class="head-container">
-                <div class="head-brand"><a href="#">잔재미코딩</a></div>
-                <div class="head-blog"><a href="#">잔재미코딩 블로그 모음</a></div>
+                <div class="head-brand"><a href="#">MTPLANET</a></div>
+                <div class="head-blog"><a href="#">Login</a></div>
             </div>
         </div>
     </header>
@@ -22,8 +23,8 @@
         <div class="main-container">
             <div class="inner">
                 <div class="title-container">
-                    <div class="title">Window 95</div>
-                    <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in enim optio eos ipsum. In repellat culpa recusandae eos ipsum!</div>
+                    <div class="title">Miltary corps Review</div>
+                    <div class="message">Made by Cheon & Choi</div>
                 </div>
             </div>
         </div>
@@ -32,31 +33,31 @@
         <div class="inner">
             <div class="skill-container">
                 <div class="skill">
-                    <i class="fab fa-python skill-icon python-style"></i>
+                    <i class="fa-solid fa-ranking-star python-style"></i>
                     <div class="skill-title">
-                        <div class="skill-name">파이썬</div>
-                        <div class="skill-usage">크롤링/자동예매</div>
+                        <div class="skill-name">Ranking</div>
+                        <div class="skill-usage">ranking of army</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <i class="fab fa-html5 skill-icon html-style"></i>
+                    <i class="fa-solid fa-newspaper html-style"></i>
                     <div class="skill-title">
-                        <div class="skill-name">HTML5</div>
-                        <div class="skill-usage">크롤링/자동예매</div>
+                        <div class="skill-name">News</div>
+                        <div class="skill-usage">news about army</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <i class="fab fa-css3-alt skill-icon css-style"></i>
+                    <i class="fa-solid fa-money-bill css-style"></i>
                     <div class="skill-title">
-                        <div class="skill-name">CSS3</div>
-                        <div class="skill-usage">크롤링/자동예매</div>
+                        <div class="skill-name">Payment</div>
+                        <div class="skill-usage">how much you get</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <i class="fab fa-js skill-icon javascript-style"></i>
+                    <i class="fa-solid fa-person-military-rifle discharge"></i>
                     <div class="skill-title">
-                        <div class="skill-name">JavaScript</div>
-                        <div class="skill-usage">크롤링/자동예매</div>
+                        <div class="skill-name">Discharge day</div>
+                        <div class="skill-usage">when you finish your duty</div>
                     </div>
                 </div>
                 
@@ -67,7 +68,7 @@
         <div class="inner">
             <div class="roadmap-container">
                 <div class="roadmap-title-container">
-                    <div class="roadmap-title">잔재미코딩 관련 블로그 및 서적</div>
+                    <div class="roadmap-title">Ranking</div>
                     <div class="arrow-container">
                         <i class="slide-prev fas fa-arrow-circle-left"></i>
                         <i class="slide-next fas fa-arrow-circle-right"></i>
@@ -76,68 +77,69 @@
                 <!-- html5에서 특정 태그에 변수값을 속성으로 넣고싶을때는 data-변수이름=변수값 -->
                 <ul class="class-list" data-position="0">
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/22th.svg" alt="city" class="class-image ssnd">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">rating</div>
+                                <div class="class-format"><i class="fa-solid fa-star"></i>9.5</div>
                             </div>
                         </div>
-                        <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                        <div class="class-desc" id="ffff">
+                            <div class="class-title">22nd division</div>
+                            <div class="class-detail">Coastal Surveillance Operation Unit</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/15th.svg" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">rating</div>
+                                <div class="class-format"><i class="fa-solid fa-star"></i>9.4</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">
+                                15th Division</div>
+                            <div class="class-detail">Search Company</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/1st.svg" alt="city" class="class-image ssnd">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">rating</div>
+                                <div class="class-format"><i class="fa-solid fa-star"></i>9.0</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">1st Division</div>
+                            <div class="class-detail">Artillery Regiment</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/5th.svg" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">rating</div>
+                                <div class="class-format"><i class="fa-solid fa-star"></i>8.9</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">5th Division</div>
+                            <div class="class-detail">logistics support battalion</div>
                         </div>
                     </li>
                       <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/8th.svg" alt="city" class="class-image ssnd">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">rating</div>
+                                <div class="class-format"><i class="fa-solid fa-star"></i>8.6</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">8th Division</div>
+                            <div class="class-detail">Headquarters duty station</div>
                         </div>
                     </li>
                 </ul>
@@ -146,7 +148,7 @@
         <div class="inner">
             <div class="roadmap-container">
                 <div class="roadmap-title-container">
-                    <div class="roadmap-title">잔재미코딩 관련 블로그 및 서적</div>
+                    <div class="roadmap-title">News</div>
                     <div class="arrow-container">
                         <i class="slide-prev fas fa-arrow-circle-left"></i>
                         <i class="slide-next fas fa-arrow-circle-right"></i>
@@ -155,68 +157,63 @@
                 <!-- html5에서 특정 태그에 변수값을 속성으로 넣고싶을때는 data-변수이름=변수값 -->
                 <ul class="class-list" data-position="0">
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/art1.jpg" alt="city" class="class-image art">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">news</div>
+                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">4th in the world with 1.2 million currency groups… Korea ranked 8th</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/art2.jpg" alt="city" class="class-image art">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">news</div>
+                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">North Korean drones fly in a 'zigzag' direction when going south... Military, when did you realize that you were going to Seoul?</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/art3.jpg" alt="city" class="class-image art">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">news</div>
+                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">Chairman of the Joint Chiefs of Staff "The enemy provoked an unexpected and difficult situation"</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/art4.jpg" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">news</div>
+                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">"Running command post"... Army, field deployment of command post vehicles within the year </div>
                         </div>
                     </li>
                       <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/art5.jpg" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">news</div>
+                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">North Korea’s rear infiltration reconnaissance drone business is gaining strength… Military "Efficiency Review"</div>
                         </div>
                     </li>
                 </ul>
@@ -225,7 +222,7 @@
         <div class="inner">
             <div class="roadmap-container">
                 <div class="roadmap-title-container">
-                    <div class="roadmap-title">잔재미코딩 관련 블로그 및 서적</div>
+                    <div class="roadmap-title">test</div>
                     <div class="arrow-container">
                         <i class="slide-prev fas fa-arrow-circle-left"></i>
                         <i class="slide-next fas fa-arrow-circle-right"></i>
@@ -237,7 +234,7 @@
                         <img src="img/city.jpg" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
+                                <div class="class-type">news</div>
                                 <div class="class-format">블로그</div>
                             </div>
                         </div>
@@ -274,6 +271,12 @@
                     </li>
                   
                 </ul>
+            </div>
+        </div>
+        <div id="detail" class="hidden">
+            <div class="detail-container">
+                <div id="detail-top">Coastal Surveillance Operation Unit</div>
+                <div class="detail-section">ddd</div>
             </div>
         </div>
     </section>
