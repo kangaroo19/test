@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/297ce5e59d.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="test.css">
+    <style>
+        #parent{
+           border:1px solid tomato;
+            margin-top:100px;
+            display: inline-block;
+
+        }
+        #child{
+            background-color: powderblue;
+            margin-top:50px;
+            /* display: inline-block; */
+        }
+    </style>
 </head>
 <body>
-    <div id="box" >box</div>
-  <script src="test.js"></script>
+    <div id="parent">
+        <div id="child">
+            Hello world
+        </div>
+    </div>
 </body>
 </html>

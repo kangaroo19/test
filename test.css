@@ -1,5 +1,13 @@
-#box{
+.box{
   width:100px;
   height:100px;
   border:1px solid black;
+}
+#box1{
+  margin-bottom: 100px;
+  display:inline-block;
+
+}
+#box2{
+  margin-top: 150px;
 }

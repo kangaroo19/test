@@ -1,6 +1,11 @@
-let arr=[1,2,3,4]
-let arr2=[...arr]
-
-arr2.push(55)
-
-console.log(arr,arr2)
+function findUser(id) {
+    const user = {
+      id: id,
+      name: "User" + id,
+      email: id + "@test.com",
+    };
+    return user;
+  }
+  
+  const user = findUser(1);
+  console.log("user:", user);
