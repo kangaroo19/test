@@ -31,7 +31,7 @@ function transformNext(event){
     //하나의 카드라도 왼쪽으로 이동했다면, 오른쪽으로 갈 수 있음
     if(Number(activeLi)<0){
         activeLi=Number(activeLi)+260;
-        //왼쪾에 있던 카드가 오른쪽으로 갔다면 다시 왼쪽으로 갈 수 있으므로 prev버튼 활성화
+        //왼쪽에 있던 카드가 오른쪽으로 갔다면 다시 왼쪽으로 갈 수 있으므로 prev버튼 활성화
         slidePrev.style.color='#2f3059';
         slidePrev.classList.add('slide-prev-hover');
         slidePrev.addEventListener('click',transformPrev);
@@ -132,3 +132,22 @@ $("#ffff").on("click",()=>{
 $(".detail-close").on("click",()=>{
     $('#detail').addClass('hidden')
 });
+let count1=0
+$(".goodbad").on("click",(e)=>{
+    e.preventDefault()
+    if(e.target.value==="GOOD"){
+        e.target.value="BAD"
+    }
+    else{
+        e.target.value="GOOD"
+    }
+})
+// const good=document.querySelector(".tlqkf")
+// $(".detail-submit").on("click",(e)=>{
+//     e.preventDefault()
+//     const msg=$(".detail-input")[0].value
+//     const div = document.createElement( "div" )
+//     div.className="good-section"
+//     const a=good.appendChild(div)
+//     a.child
+// })

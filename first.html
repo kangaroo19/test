@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/stylestyle.css">
     <script src="https://kit.fontawesome.com/8fe9d6a948.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
     <!-- CSS 작명 규칙(BEM):block element modifier -->
@@ -23,8 +24,8 @@
         <div class="main-container">
             <div class="inner">
                 <div class="title-container">
-                    <div class="title">Miltary corps Review</div>
-                    <div class="message">Made by Cheon & Choi</div>
+                    <div class="title animated zoomInDown">Military corps Review</div>
+                    <div class="message animated  zoomInDown">Made by Cheon & Choi</div>
                 </div>
             </div>
         </div>
@@ -49,8 +50,8 @@
                 <div class="skill">
                     <i class="fa-solid fa-money-bill css-style"></i>
                     <div class="skill-title">
-                        <div class="skill-name">Payment</div>
-                        <div class="skill-usage">how much you get</div>
+                        <div class="skill-name">Salary</div>
+                        <div class="skill-usage">manage your money</div>
                     </div>
                 </div>
                 <div class="skill">
@@ -161,11 +162,10 @@
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">news</div>
-                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">4th in the world with 1.2 million currency groups… Korea ranked 8th</div>
+                            <div class="class-title"><a href="https://www.yna.co.kr/view/AKR20230110052800504?section=politics/defense" target='_blank' class="atag">4th in the world with 1.2 million currency groups… Korea ranked 8th</a></div>
                         </div>
                     </li>
                     <li class="class-card">
@@ -173,11 +173,10 @@
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">news</div>
-                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">North Korean drones fly in a 'zigzag' direction when going south... Military, when did you realize that you were going to Seoul?</div>
+                            <div class="class-title"><a href="https://www.yna.co.kr/view/AKR20230109133200504?section=politics/defense" target='_blank' class="atag">North Korean drones fly in a 'zigzag' direction when going south... Military, when did you realize that you were going to Seoul?</a></div>
                         </div>
                     </li>
                     <li class="class-card">
@@ -185,11 +184,10 @@
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">news</div>
-                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">Chairman of the Joint Chiefs of Staff "The enemy provoked an unexpected and difficult situation"</div>
+                            <div class="class-title"><a href="https://www.yna.co.kr/view/AKR20230109121000504?section=politics/defense" target='_blank' class="atag">Chairman of the Joint Chiefs of Staff "The enemy provoked an unexpected and difficult situation"</a></div>
                         </div>
                     </li>
                     <li class="class-card">
@@ -197,11 +195,10 @@
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">news</div>
-                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">"Running command post"... Army, field deployment of command post vehicles within the year </div>
+                            <div class="class-title"><a href="https://www.yna.co.kr/view/AKR20230109069851504?section=politics/defense" target='_blank' class="atag">"Running command post"... Army, field deployment of command post vehicles within the year</a> </div>
                         </div>
                     </li>
                       <li class="class-card">
@@ -209,11 +206,10 @@
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">news</div>
-                                <div class="class-format">About more</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">North Korea’s rear infiltration reconnaissance drone business is gaining strength… Military "Efficiency Review"</div>
+                            <div class="class-title"><a href="https://www.yna.co.kr/view/AKR20230109032600504?section=politics/defense" target='_blank' class="atag">North Korea’s rear infiltration reconnaissance drone business is gaining strength… Military "Efficiency Review"</a></div>
                         </div>
                     </li>
                 </ul>
@@ -222,53 +218,42 @@
         <div class="inner">
             <div class="roadmap-container">
                 <div class="roadmap-title-container">
-                    <div class="roadmap-title">test</div>
-                    <div class="arrow-container">
-                        <i class="slide-prev fas fa-arrow-circle-left"></i>
-                        <i class="slide-next fas fa-arrow-circle-right"></i>
-                    </div>
+                    <span class="roadmap-title">ME & My freinds</span>
+                    <button>ADD</button>
                 </div>
                 <!-- html5에서 특정 태그에 변수값을 속성으로 넣고싶을때는 data-변수이름=변수값 -->
                 <ul class="class-list" data-position="0">
-                    <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                    <li class="class-card new-card">
+                        <img src="img/s.png" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">news</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">(Me)Cheon jae hyun</div>
+                                <div class="class-format">Sergeant</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">22nd Division</div>
+                            <div class="class-detail">Coastal Surveillance Operation Unit<br>
+                                Driver<br>
+                                Left 0 days</div>
                         </div>
                     </li>
                     <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
+                        <img src="img/s.png" alt="city" class="class-image">
                         <div class="class-container">
                             <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
+                                <div class="class-type">Choi dong uk</div>
+                                <div class="class-format">Private</div>
                             </div>
                         </div>
                         <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
+                            <div class="class-title">8th Division</div>
+                            <div class="class-detail">Search Company<br>
+                                Artilleryman<br>
+                            Left 498 days</div>
                         </div>
                     </li>
-                    <li class="class-card">
-                        <img src="img/city.jpg" alt="city" class="class-image">
-                        <div class="class-container">
-                            <div class="class-skill">
-                                <div class="class-type">학습방법</div>
-                                <div class="class-format">블로그</div>
-                            </div>
-                        </div>
-                        <div class="class-desc">
-                            <div class="class-title">City Sunset Night</div>
-                            <div class="class-detail">Lorem ipsum dolor sit.</div>
-                        </div>
-                    </li>
+                    
                   
                 </ul>
             </div>
@@ -276,17 +261,87 @@
         <div id="detail" class="hidden">
             <div class="detail-container">
                 <div id="detail-top">Coastal Surveillance Operation Unit</div>
-                <div class="detail-section">ddd</div>
+                <div class="detail-section">
+                    <div class="big-title">22nd Coastal Surveillance Operation Unit</div>
+                    <div class="small-title">Gangwon-do goseong </div>
+                    <div class="section-section">
+                        <div class="good-things">
+                            <div class="good-title"><i class="fa-solid fa-face-smile smile"></i> Good Things</div>
+                            <div class="tlqkf">
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">There are many vacation days, and the facilities are good</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">nice people around</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">
+                                        not many training</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">When going out or staying out, there are many places to go around</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">good gym makes our body great</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">warm in winter and cool in summer
+                                    </div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">I feel good because I go out a lot</div>
+                                </div>
+                                <div class="good-section">
+                                    <div class="good-user">annoymous</div>
+                                    <div class="good-sec">The px is big and the gym is good
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="bad-things">
+                            <div class="bad-title"><i class="fa-solid fa-face-angry bad"></i> Bad Things</div>
+                            <div class="good-section">
+                                <div class="good-user">annoymous</div>
+                                <div class="good-sec">Sometimes training is hard
+                                </div>
+                            </div>
+                            <div class="good-section">
+                                <div class="good-user">annoymous</div>
+                                <div class="good-sec">Too many people
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-bottom">
+                    <form class="detail-form"action="">
+                        <input class="goodbad"type="submit" value="GOOD">
+                        <input class="detail-input" type="text">
+                        <input class="detail-submit" type="submit" value="POST">
+                    </form>
+                    <button class="detail-close">close</button>
+
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="inner">
-            <div class="footer-message">Lorem ipsum dolor sit.</div>
-            <div class="footer-contact">컨택:1000jjj@naver.com</div>
-            <div class="footer-copyright">Copyright ⓒ 2022 All rights reserved.</div>
+            <div class="footer-message">MTPLANET</div>
+            <div class="footer-contact">contact:1000jjj@naver.com</div>
+            <div class="footer-copyright">Copyright ⓒ 2023 All rights reserved.</div>
         </div>
     </footer>
+    
     <a id="backtotop"></a>
     <script src="js/main.js"></script>
 </body>
